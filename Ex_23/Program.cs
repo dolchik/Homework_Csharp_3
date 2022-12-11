@@ -12,7 +12,6 @@ int EntryDigit(string str)
     int userDigit = int.Parse(Console.ReadLine());
     Console.Write($"{userDigit} ->");
     return userDigit;
-    
 }
 
 double findCube(int userDigit)
