@@ -13,15 +13,13 @@ int EntryDigit(string str) // метод считывает число введ�
     int userDigit = int.Parse(Console.ReadLine());
     return userDigit;
 }
-int checkPalindrom(int userDigit) // метод проверяет является ли число палиандромом
+void checkPalindrom(int userDigit) // метод проверяет является ли число палиандромом
 {
     int firstDigits = userDigit / 1000;
     int endDigits = (userDigit / 10 % 10 * 10) + userDigit % 10;
     
     if (firstDigits == endDigits) Console.WriteLine($"{userDigit} -> да");
     else Console.Write($"{userDigit} -> нет");
-    return firstDigits;
-    return endDigits;
 }
 
 int userDigit = EntryDigit("Введите пятизначное число: ");
@@ -34,4 +32,3 @@ checkPalindrom(userDigit);
 
 // int endDigits = (userDigit / 10 % 10 * 10) + userDigit % 10;
 // Console.WriteLine(endDigits);
-
