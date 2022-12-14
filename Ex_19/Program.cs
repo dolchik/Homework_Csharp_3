@@ -16,7 +16,7 @@ int EntryDigit(string str) // метод считывает число введ�
 void checkPalindrom(int userDigit) // метод проверяет является ли число палиандромом
 {
     int firstDigits = userDigit / 1000;
-    int endDigits = (userDigit / 10 % 10 * 10) + userDigit % 10;
+    int endDigits = userDigit % 10 * 10 + userDigit / 10 % 10;
     
     if (firstDigits == endDigits) Console.WriteLine($"{userDigit} -> да");
     else Console.Write($"{userDigit} -> нет");
